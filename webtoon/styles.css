@@ -119,6 +119,12 @@ a { color: inherit; }
   height: auto;
   display: block;
 }
+/* 웹툰: 모서리 각지게, 컷 간격 좁게 (연속 스토리 느낌) */
+.webtoon-scroll { gap: clamp(10px, 2vw, 18px); }
+.webtoon-scroll .card-frame {
+  border-radius: 0;
+  box-shadow: 0 6px 20px rgba(13, 54, 113, 0.10);
+}
 
 .cta,
 .share-section,
@@ -252,6 +258,14 @@ a { color: inherit; }
   .brand-sub { display: none; }
   .join-link { padding: 9px 11px; font-size: 0.84rem; }
   .hero { padding-top: 34px; }
-  .card-frame { border-radius: 14px; }
   .share-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  /* 웹툰 뷰어: 모바일에서 가로 꽉 채움 (좌우 여백 제거) */
+  .viewer-section {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .webtoon-scroll { gap: 6px; }
 }
