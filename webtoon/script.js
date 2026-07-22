@@ -1,7 +1,6 @@
 // 평화자료실 웹툰 (세로 스크롤 + 공유)
 const siteTitle = '한국의 핵잠수함 도입, 무엇을 위한 걸까요?';
 const siteDescription = '아빠와 딸의 대화로 풀어보는 핵추진잠수함 이야기 · 비용부터 명분과 용도까지';
-const joinUrl = 'https://www.spark946.org/about/join';
 
 function getShareUrl() {
   return window.location.origin + window.location.pathname;
@@ -9,22 +8,10 @@ function getShareUrl() {
 
 function getShareMessage({ includePageUrl = true } = {}) {
   const pageUrl = getShareUrl();
-  const pageUrlBlock = includePageUrl ? `\n\n👆 웹에서 자세히 보기: ${pageUrl}` : '';
+  const pageUrlBlock = includePageUrl ? `${pageUrl}\n` : '';
 
-  return `🚢 한국의 핵잠수함 도입, 무엇을 위한 걸까요?
-
-아빠와 딸의 대화로 풀어보는 핵추진잠수함 웹툰
-- 한 척에 6조 원, 네 척이면 24조 원 (운영비까지 1척당 최소 32조 원)
-- 좁은 한반도 바다엔 디젤잠수함이 더 유리
-- 미국의 중국 봉쇄에 동원될 위험
-- 자주국방이 아닌 미국 의존 심화${pageUrlBlock}
-
-진짜 자주국방과 한반도 평화를 위해
-평화와통일을여는사람들과 함께해 주세요.
-
-🤝 회원가입: ${joinUrl}
-
-#핵잠수함반대 #자주국방 #한반도평화 #평통사`;
+  return `${pageUrlBlock}[웹툰으로 만나는 핵잠수함 이야기]
+한국의 핵잠수함 도입, 무엇을 위한 것일까요?`;
 }
 
 function openPopup(url, width = 640, height = 640) {
