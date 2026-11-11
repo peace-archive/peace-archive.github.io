@@ -1,5 +1,5 @@
 // 평화자료실 카드뉴스 (세로 스크롤 + 공유)
-const siteTitle = '81년 만에 피해자들이 미국에 묻습니다';
+const siteTitle = '81년 만에 한국원폭 피해자들이 미국에 묻습니다';
 const siteDescription = '서울 원폭국제민중법정(11/13~15, 한신대 신학대학원) — 카드뉴스 11장으로 미리 보기';
 const joinUrl = 'https://www.spark946.org/about/join';
 
@@ -11,7 +11,7 @@ function getShareMessage({ includePageUrl = true } = {}) {
   const pageUrl = getShareUrl();
   const pageUrlBlock = includePageUrl ? `\n\n👆 웹에서 자세히 보기: ${pageUrl}` : '';
 
-  return `🕊️ 81년 만에 원폭 피해자들이 미국에 묻습니다
+  return `🕊️ 81년 만에 한국원폭 피해자들이 미국에 묻습니다
 
 서울 원폭국제민중법정
 - 2026년 11월 13일(금)~15일(일), 한신대 신학대학원 채플홀(서울 수유리)
